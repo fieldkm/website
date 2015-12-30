@@ -684,33 +684,6 @@ body.nav-opened .nav {
     color: #fff;
 }
 
-.subscribe-button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    height: 38px;
-    padding: 0 20px;
-    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
-    text-align: center;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 35px;
-    border-radius: 3px;
-    background: #fff;
-    transition: all ease 0.3s;
-}
-.subscribe-button:before {
-    font-size: 9px;
-    margin-right: 6px;
-}
-
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
@@ -776,7 +749,7 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 38px;
+    height: 42px;
     padding: 1px 0 5px 0;
     width: auto;
 }
@@ -867,11 +840,16 @@ body.nav-opened .nav {
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
     margin: 10px 0 10px 0;
-    font-size: 5rem;
+    font-size: 7rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
     color: #fff;
+}
+
+.page-title > sup {
+    font-size: 70%;
+    font-weight: normal;
 }
 
 .page-description {
@@ -879,7 +857,7 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: "Open Sans", serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -916,7 +894,7 @@ body.nav-opened .nav {
 .post {
     position: relative;
     width: 80%;
-    max-width: 710px;
+    max-width: 1024px;
     margin: 4rem auto;
     padding-bottom: 4rem;
     /*border-bottom: #EBF2F6 1px solid;*/
@@ -1202,8 +1180,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-head.main-header {
-    height: 65vh;
-    min-height: 180px;
+    height: 110px;
 }
 
 .no-cover.post-head.main-header {
@@ -1585,13 +1562,6 @@ body:not(.post-template) .post-title {
 
 .site-footer a:hover {
     border-bottom: #bbc7cc 1px solid;
-}
-
-.poweredby {
-    display: block;
-    width: 45%;
-    float: right;
-    text-align: right;
 }
 
 .copyright {

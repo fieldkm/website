@@ -602,7 +602,7 @@ body.nav-opened .nav {
     top: 0;
     width: 20px;
     height: 1px;
-    background: rgb(150,150,150);
+    background: #969696;
     top: 15px;
     -webkit-transition: background 0.15s ease;
     transition: background 0.15s ease;
@@ -622,13 +622,21 @@ body.nav-opened .nav {
 
 .nav-close:hover:before,
 .nav-close:hover:after {
-    background: rgb(255,255,255);
+    background: #FFF;
 }
 
 .nav ul {
     padding: 90px 9% 5%;
     list-style: none;
     counter-reset: item;
+}
+
+.nav ul ul {
+    padding: 0 0 0 9%;
+}
+
+.nav ul ul li:before {
+    content: counters(item, '.', lower-roman);
 }
 
 .nav li:before {
@@ -665,7 +673,7 @@ body.nav-opened .nav {
 .nav .nav-current:before {
     color: #fff;
 }
-.nav .nav-current a:after {
+.nav .nav-current > a:after {
     content: " ";
     border-bottom: rgba(255,255,255,0.5) 1px solid;
     width: 100%;
@@ -677,7 +685,7 @@ body.nav-opened .nav {
     color: #B8B8B8;
 }
 
-.nav li.nav-current a,
+.nav li.nav-current > a,
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
@@ -1013,6 +1021,13 @@ body:not(.post-template) .post-title {
     display: block;
     font-size: 1.4rem;
     line-height: 1.5em;
+}
+
+#translator {
+    border: 0 none;
+    height: 720px;
+    margin: 0;
+    width: 100%;
 }
 
 
@@ -1799,10 +1814,7 @@ body:not(.post-template) .post-title {
 
     .post {
         width: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin: 2rem 16px;
         padding-bottom: 2rem;
         line-height: 1.65em;
     }

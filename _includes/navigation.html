@@ -5,11 +5,16 @@
     </a>
     <ul>
         <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}">Home</a></li>
-        <li class="nav-about {% if page.current == 'about' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}about">About</a></li>
-        <li class="nav-fables {% if page.url contains 'fables' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tag/fables">Fables</a></li>
-        <li class="nav-speeches {% if page.url contains 'speeches' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tag/speeches">Speeches</a></li>
-        <li class="nav-fiction {% if page.url contains 'fiction' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tag/fiction">Fiction</a></li>
-        <li class="nav-author {% if page.current == 'author' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}author/casper">Author</a></li>
+        <li class="nav-about {% if page.current == 'about' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}about/">About</a>
+            <ul>
+                <li class="nav-collaborators {% if page.current == 'collaborators' %} nav-current{% endif %}"><a href="{{ site.baseurl }}about/collaborators/">Collaborators</a></li>
+                <li class="nav-earlyadopters {% if page.current == 'early adopters' %} nav-current{% endif %}"><a href="{{ site.baseurl }}about/early_adopters/">Early Adopters</a></li>
+            </ul>
+        </li>
+        <li class="nav-download" role="presentation"><a href="https://github.com/BuildingSync/schema/releases">Download</a></li>
+        <li class="nav-docs {% if page.url contains 'docs' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}docs/">Docs</a></li>
+        <li class="nav-faq {% if page.url contains 'faq' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}faq/">FAQ</a></li>
+        <li class="nav-tools {% if page.current == 'tools' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tools/">Tools</a></li>
     </ul>
 </div>
 <span class="nav-cover"></span>

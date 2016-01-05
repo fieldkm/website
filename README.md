@@ -1,23 +1,32 @@
 ## BuildingSync Jekyll Site
 
-## How to use it
-### Running locally
-`jekyll serve`
-
+### Local Development
+1. Clone the master branch of this repo locally.
+2. Run `bundle install` to install all gem dependencies (including jekyll).
+3. If you are using rbenv, make sure to run `rbenv rehash`.
+4. To start a local development environment, run `jekyll serve`.  Browse to http://0.0.0.0:4000 to see the site.
+5. During local development, edit the code on the master branch, then refresh the browser to see your changes.
+6. Commit and push the master branch when you are done.
 
 
 ### Deployment
+We are currently using plugins that are not supported by GitHub; therefore, we cannot deploy automatically to GitHub Pages.  To deploy, follow these steps:
+1. Clone the gh-pages branch of this repo locally.  This should be in a different location than your master branch clone.
+2. Create a script similar to the one below:
+  ```
+  rm -rf ~/path/to/jasper-pages 
+	cd ~/path/to/BuildingSync-website-master
+	jekyll build 
+	cd ~/path/to/BuildingSync-website-gh-pages 
+	find -not -path "./.git/*" -not -name ".git" | grep git 
+	find -not -path "./.git/*" -not -name ".git" -delete 
+	cp -r ~/path/to/jasper-pages/* . 
+	cd ~ 
+  ```
+3. Replace the paths to the BuildingSync-website master branch, BuildingSync-website gh-pages branch, and jasper-pages (this will be one level up from the BuildingSync-website master branch, and is the location of the compiled site).
+4. Run the script.  This will build the site and copy the changed files to the gh-pages branch of the repo.
+5. Commit and push the gh-pages branch.
 
-**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means:
-
-**1)** that we need to generate your site locally (more details below) and push the resulting HTML to a Github repository;
-
-**2)** built the site with [travis-ci](https://travis-ci.org/) (with goodies from [jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the generated *_site/* files to your *gh-pages* branch.
- This later approach is the one I am currently using to generate the live demo.
-
-For option **1)** simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting *_site/* contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (as for the [demo](https://github.com/biomadeira/jasper/tree/gh-pages)).
-
-For option **2)** you will need to set up travis-ci for your personal fork. Briefly all you need then is to change your details in *[\_config.yml](_config.yml)* so that you can push to your github repo. You will also need to generate a secure key to add to your *[.travis.yml](.travis.yml)* (you can find more info on how to do it in that file). Also make sure you read the documentation from [jekyll-travis](https://github.com/mfenner/jekyll-travis). This approach has clear advantages in that you simply push changes to your files and all the html files are generated for you. Also you get to know if everything is still fine with your site builds. Don't hesitate to contact me if you still have any issues (see below about issue tracking).
 
 ## Copyright & License
 

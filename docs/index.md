@@ -9,9 +9,6 @@ current: docs
 
 The first three documents (Data Dictionary, Geometry Reference Sheet) comprise BuildingSync, and the fourth (Implementation Guide) is a comprehensive guide to using it and implementing it with energy auditing software.
 
-#### Schema Documentation
-Explore all major versions of the schema: [schema.buildingsync.net](https://schema.buildingsync.net/).
-
 #### [Data Dictionary](BuildingSync%20Data%20Dictionary%202.0.xlsx)
 The [data field "dictionary"](BuildingSync%20Data%20Dictionary%202.0.xlsx) is in Excel format, including field names, definitions, units, and other attributes. The data dictionary is aligned with BEDES, but includes only the subset of data fields that are relevant for energy audits. This file can be referenced to help standardize the terminology used in energy audits, but does it does not provide a structure that allows data to be exchanged across different applications.
 

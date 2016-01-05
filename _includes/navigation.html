@@ -12,7 +12,10 @@
             </ul>
         </li>
         <li class="nav-download" role="presentation"><a href="https://github.com/BuildingSync/schema/releases">Download</a></li>
-        <li class="nav-docs {% if page.url contains 'docs' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}docs/">Docs</a></li>
+        <li class="nav-docs {% if page.current == 'docs' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}docs/">Docs</a></li>
+            <ul>
+                <li class="nav-schema {% if page.current == 'schema' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}docs/schema/">Schema</a></li>
+            </ul>
         <li class="nav-faq {% if page.url contains 'faq' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}faq/">FAQ</a></li>
         <li class="nav-tools {% if page.current == 'tools' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tools/">Tools</a></li>
     </ul>

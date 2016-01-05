@@ -1030,6 +1030,11 @@ body:not(.post-template) .post-title {
     width: 100%;
 }
 
+img[title="BuildingSync Workflow"] {
+    min-width: 400px;
+    width: 100%;
+}
+
 
 /* ==========================================================================
    5. Single Post - When you click on an individual post

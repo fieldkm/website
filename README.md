@@ -13,16 +13,16 @@
 We are currently using plugins that are not supported by GitHub; therefore, we cannot deploy automatically to GitHub Pages.  To deploy, follow these steps:
 1. Clone the gh-pages branch of this repo locally.  This should be in a different location than your master branch clone.
 2. Create a script similar to the one below:
-  ```
-  rm -rf ~/path/to/jasper-pages 
-	cd ~/path/to/BuildingSync-website-master
-	jekyll build 
-	cd ~/path/to/BuildingSync-website-gh-pages 
-	find -not -path "./.git/*" -not -name ".git" | grep git 
-	find -not -path "./.git/*" -not -name ".git" -delete 
-	cp -r ~/path/to/jasper-pages/* . 
-	cd ~ 
-  ```
+	  ```
+	  rm -rf ~/path/to/jasper-pages 
+	  cd ~/path/to/BuildingSync-website-master
+	  jekyll build 
+	  cd ~/path/to/BuildingSync-website-gh-pages 
+	  find -not -path "./.git/*" -not -name ".git" | grep git 
+	  find -not -path "./.git/*" -not -name ".git" -delete 
+	  cp -r ~/path/to/jasper-pages/* . 
+	  cd ~ 
+  	```
 3. Replace the paths to the BuildingSync-website master branch, BuildingSync-website gh-pages branch, and jasper-pages (this will be one level up from the BuildingSync-website master branch, and is the location of the compiled site).
 4. Run the script.  This will build the site and copy the changed files to the gh-pages branch of the repo.
 5. Commit and push the gh-pages branch.

@@ -15,6 +15,8 @@ BuildingSync was developed using the standard energy data terminology defined in
 Graphic illustrating above text, possibly the same one on the main page
 {% endcomment %}
 
+BuildingSync standardizes the format of the energy audit data itself.  It is not intended to standardize the calculations performed on these data by engineers, analysts, software packages, or other audit tools.
+
 BuildingSync consists of two files and a reference sheet, which are all offered as [free downloads](https://github.com/BuildingSync/schema/releases):
 
 - The data field "dictionary" {% comment %}TODO: hyperlink to download location{% endcomment %} in Excel format, including field names, definitions, units, and other attributes. The data dictionary is aligned with BEDES, but includes only the subset of data fields that are relevant for energy audits. This file can be referenced to help standardize the terminology used in energy audits, but does it does not provide a structure that allows data to be exchanged across different applications.
@@ -45,4 +47,4 @@ BuildingSync considers the needs and interests of all stakeholders in the energy
 - **Providers of building energy assessment software** can integrate the ability to export BuildingSync-compatible files into their software.
 - **Providers of energy auditing services** can choose to use software that can output BuildingSync-compatible files.
 - **Building owners** may wish to incorporate BuildingSync into their next RFP for a building energy audit by requiring the auditor to provide data in a BuildingSync-compatible format.
-
+- **Utilities** can choose to recommend or require software that uses BuildingSync-compatible files for any programs involving energy audits.

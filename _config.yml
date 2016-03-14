@@ -1,0 +1,13 @@
+# Jekyll configuration
+markdown: kramdown
+sass:
+  style: compressed
+
+# Site settings
+title: 'BuildingSync®'
+title_html: 'BuildingSync<sup>&reg;</sup>'
+description: 'Standardizing Energy Audit Data Collection.'
+language: 'en-us'
+baseurl: ''
+url: 'http://buildingsync.net/'
+google_analytics: UA-18838154-16

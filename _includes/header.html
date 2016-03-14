@@ -1,0 +1,29 @@
+<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
+  <h1><a href="{{ site.baseurl }}/index.html">{{ site.title_html }}</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li class="{% if page.title == 'About' %}active{% endif %}" role="presentation"><a href="/about/">About</a>
+              <ul>
+                <li class="{% if page.title == 'Collaborators' %}active{% endif %}" role="presentation"><a href="/about/collaborators/">Collaborators</a></li>
+                <li class="{% if page.title == 'Industry Stakeholders' %}active{% endif %}" role="presentation"><a href="/about/industry_stakeholders/">Industry Stakeholders</a></li>
+              </ul>
+            </li>
+            <li role="presentation"><a href="https://github.com/BuildingSync/schema/releases">Download</a></li>
+            <li class="{% if page.title == 'Docs' %}active{% endif %}" role="presentation"><a href="/docs/">Docs</a>
+              <ul>
+                <li class="{% if page.title == 'Schema Documentation' %}active{% endif %}" role="presentation"><a href="/docs/schema/">Schema</a></li>
+              </ul>
+            </li>
+            <li class="{% if page.title == 'FAQ' %}active{% endif %}" role="presentation"><a href="/faq/">FAQ</a></li>
+            <li class="{% if page.title == 'Tools' %}active{% endif %}" role="presentation"><a href="/tools/">Tools</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>

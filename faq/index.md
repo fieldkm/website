@@ -8,8 +8,8 @@ title: FAQ
 [Answer 1 - will take more time to write this one]
 {% endcomment %} 
 
-#### Who else has adopted the BuildingSync schema already?
-The Building Sync effort has recruited several industry stakeholders. See [Industry Stakeholders](/about/industry_stakeholders) for a list.
+#### Who else is using the BuildingSync schema?
+The Building Sync effort has involved recruiting several industry collaborators to review the schema and investigate its incorporation into existing audits tools. See [Collaborators](/about/collaborators) for a list.
 
 #### What efforts have the team made to ensure that BuildingSync follows established energy audit practices and standards?
 BuildingSync covers the essential data collected across all ASHRAE Audit Levels, as defined in Procedures for Commercial Building Energy Audits, and includes all data necessary for the calculation of a [Commercial Building Energy Asset Score](http://energy.gov/eere/buildings/building-energy-asset-score). Moreover, the team has coordinated with an extensive group of industry stakeholders to ensure relevance to the industry. The [Implementation Guide](/docs/BuildingSync%20v1.0-legacy%20Implementation%20Guide.pdf) includes a list of these stakeholders. Overall, existing data formats and datasets were leveraged whenever possible, to avoid duplication of effort and minimize the effort required to perform data reconciliation and mapping from existing databases.
